@@ -1,1 +1,114 @@
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0fdf4; /* Soft light green */
+      color: #2e2e2e;
+      line-height: 1.6;
+    }
+    /* Header */
+    header {
+      background: linear-gradient(45deg, #2e7d32, #66bb6a); /* Gradient of greens */
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    /* Main Content */
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      padding-bottom: 150px; /* Increased bottom padding to avoid overlap with the footer */
+    }
+    section {
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: #2e7d32;
+      border-bottom: 2px solid #2e7d32;
+      padding-bottom: 5px;
+    }
+    /* Articles */
+    article {
+      background-color: #e8f5e9; /* Very light green */
+      border: 1px solid #c8e6c9;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    article h3 {
+      margin-top: 0;
+      color: #1b5e20; /* Deep green */
+    }
+    /* Footer */
+    footer {
+      background-color: #2e7d32;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+    footer h3 {
+      margin-top: 0;
+    }
+    footer p {
+      display: inline-block; /* Display inline for footer elements */
+      margin: 0 15px;
+      vertical-align: middle;
+    }
+    /* Links */
+    a {
+      color: #00ff08; /* Medium green */
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Página web con un header, contenido de información de mis proyectos y un footer con la info de contacto -->
+  <header>
+    <h1>Portfolio</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Proyectos</h2>
+      <article>
+        <h3>Página web de Friendly Market</h3>
+        <p>Este proyecto consiste en una empresa ficticia dedicada al servicio de "mystery shopping", evaluando la calidad del servicio al cliente en distintos negocios. A través de clientes encubiertos, se analiza el rendimiento del personal y la experiencia del usuario, proporcionando informes detallados para mejorar la eficiencia empresarial. Friendly Market busca optimizar la gestión de empresas en España mediante auditorías personalizadas y estrategias de mejora.</p>
+      </article>
+      <article>
+        <h3>Langchain con Ollama - Chat con PDFs usando IA</h3>
+        <p>Este proyecto utiliza Langchain, Ollama y Mistral-7B para desarrollar un sistema de Recuperación Aumentada por Generación (RAG) que permite interactuar con archivos PDF de forma dinámica. Mediante Streamlit, se ha creado una interfaz intuitiva que permite cargar y consultar documentos sin salir del navegador. Además, el sistema maneja errores de ejecución y permite mejorar su eficiencia ajustando parámetros del modelo de lenguaje o utilizando uno más potente.</p>
+      </article>
+      <article>
+        <h3>Aplicación Computacional de Métodos Experimentales en Radioterapia para Práctica Clínica</h3>
+        <p>Este proyecto investiga el uso de simulaciones computacionales para optimizar los tratamientos de radioterapia en oncología. Se centra en la aplicación del método de Monte Carlo para analizar la distribución de dosis en tumores y mejorar la precisión del tratamiento. A través de modelos matemáticos y simulaciones en Python, se evalúan variables como ángulos de incidencia, voltaje y campos magnéticos para optimizar la administración de la radiación y minimizar daños en tejidos sanos.</p>
+        <p>Los resultados de este estudio pueden contribuir a personalizar los tratamientos de radioterapia y mejorar la seguridad y eficacia en la práctica clínica.</p>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <h3>Contacto</h3>
+    <p>Email: 7velilla@gmail.com</p>
+    <p>Teléfono: 674 976 481</p>
+    <p>Github: <a href="https://github.com/Carlolopespesia" target="_blank">Carlolopespesia</a></p>
+  </footer>
+</body>
+</html>
