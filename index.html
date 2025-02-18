@@ -53,7 +53,7 @@
     main {
       flex: 1;
       padding: 40px 20px;
-      max-width: 1000px;
+      max-width: 1200px;
       width: 100%;
       margin: 0 auto;
     }
@@ -67,8 +67,16 @@
     
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 30px;
+      /* Por defecto, 2 columnas: 2 tarjetas por fila (4 tarjetas = 2 filas de 2) */
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* En pantallas amplias, muestra 4 columnas en una sola fila */
+    @media (min-width: 1024px) {
+      .projects-grid {
+         grid-template-columns: repeat(4, 1fr);
+      }
     }
     
     .project-card {
@@ -77,11 +85,12 @@
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     
     .project-card:hover {
       transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
     
     .project-card h3 {
@@ -107,11 +116,16 @@
       font-size: 1.5em;
     }
     
+    footer .footer-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    
     footer .footer-info p {
-      display: inline-block; /* Inline display for footer items */
-      margin: 0 15px;
+      margin: 0;
       font-size: 0.9em;
-      vertical-align: middle;
     }
     
     footer a {
@@ -121,6 +135,37 @@
     
     footer a:hover {
       text-decoration: underline;
+    }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5em;
+      }
+      header p {
+        font-size: 1em;
+      }
+      main {
+        padding: 30px 15px;
+      }
+      main h2 {
+        font-size: 1.8em;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 2em;
+      }
+      header p {
+        font-size: 0.9em;
+      }
+      main {
+        padding: 20px 10px;
+      }
+      main h2 {
+        font-size: 1.6em;
+      }
     }
   </style>
 </head>
@@ -145,6 +190,10 @@
         <div class="project-card">
           <h3><a href="https://github.com/Carlolopespesia/Trabajo-Fin-de-Grado" target="_blank">Aplicación Computacional en Radioterapia</a></h3>
           <p>Simulaciones computacionales que optimizan tratamientos de radioterapia en oncología mediante el método de Monte Carlo y análisis en Python.</p>
+        </div>
+        <div class="project-card">
+          <h3><a href="https://github.com/Carlolopespesia/Subt-tulos-en-shorts" target="_blank">Subtítulos en shorts</a></h3>
+          <p>Este proyecto automatiza la generación de subtítulos para videos en formato Shorts, facilitando la accesibilidad y mejorando la interacción con el contenido. Utiliza técnicas de reconocimiento de voz y procesamiento de video para transcribir el audio y sincronizar los subtítulos de forma precisa, optimizando así la experiencia del usuario en plataformas digitales.</p>
         </div>
       </div>
     </section>
